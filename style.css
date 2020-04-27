@@ -79,3 +79,38 @@ body {
     overflow: auto;
 }
 
+.taskContainer {
+    border-bottom: 1px solid #dbdbdb;
+    padding: 5px 0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task {
+    width: 170px;
+}
+
+i.fas.fa-check, i.fas.fa-trash-alt {
+ opacity: 0;
+ cursor: pointer;
+ transition: all .5s ease-in-out;
+}
+
+i.fas.fa-check:hover {
+    color: #0c9463;
+}
+
+i.fas.fa-trash-alt:hover {
+    color: #ff0000;
+}
+i.fas.fa-check:active {
+    transform: translateY(3px);
+}
+
+i.fas.fa-trash-alt:active {
+    transform: translateY(3px);
+}
+
+.taskContainer:hover i.fas.fa-check, .taskContainer:hover i.fas.fa-trash-alt {
+    opacity: 1;
+}
